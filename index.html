@@ -185,7 +185,9 @@
     <i class="fas fa-chevron-up"></i>
     </button>
 
+    
     <!-- More Works Dropdown -->
+    <template>
     <div class="more-works-container">
         <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
         <i class="fas fa-flask"></i>
@@ -232,6 +234,7 @@
         </div>
         </div>
     </div>
+    </template>
 
     <main id="main-content">
     <section class="hero">
@@ -240,18 +243,18 @@
             <div class="columns is-centered">
             <div class="column has-text-centered">
                 <!-- TODO: Replace with your paper title -->
-                <h1 class="title is-1 publication-title">Training-Efficient Text-to-Music Generation<br>with State-Space Modeling</h1>
+                <h1 class="title is-1 publication-title">Training-Efficient<br>Text-to-Music Generation<br>with State-Space Modeling</h1>
                 
                 <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your paper authors and their personal links -->
                     <span class="author-block">
-                    <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wei-Jaw Lee</a><sup>*</sup>,</span>
+                    <a href="" target="_blank">Wei-Jaw Lee</a>,</span>
                     <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fang-Chih Hsieh</a><sup>*</sup>,</span>
+                    <a href="" target="_blank">Fang-Chih Hsieh</a>,</span>
                     <span class="author-block">
-                    <a href="https://xjchen.tech/" target="_blank">Xuanjun Chen</a><sup>*</sup>,</span>
+                    <a href="https://xjchen.tech/" target="_blank">Xuanjun Chen</a>,</span>
                     <span class="author-block">
-                    <a href="https://fundwotsai2001.github.io/mywebsite/" target="_blank">Fang-Duo Tsai</a><sup>*</sup>,</span>
+                    <a href="https://fundwotsai2001.github.io/mywebsite/" target="_blank">Fang-Duo Tsai</a>,</span>
                     <span class="author-block">
                     <a href="https://affige.github.io/" target="_blank">Yi-Hsuan Yang</a>
                     </span>
@@ -320,6 +323,7 @@
 
 
     <!-- Teaser video-->
+    <template>
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
@@ -335,6 +339,7 @@
             </div>
         </div>
     </section>
+    </template>
     <!-- End teaser video -->
 
     <!-- Paper abstract -->
@@ -346,7 +351,10 @@
                 <div class="content has-text-justified">
                 <!-- TODO: Replace with your paper abstract -->
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+                    Recent advances in text-to-music generation (TTM) have yielded high-quality results, but often at the cost of extensive compute and the use of large proprietary internal data. To improve the affordability and openness of TTM training, an open-source generative model backbone that is more training- and data-efficient is needed.
+                    In this paper, we constrain the number of trainable parameters in the generative model to match that of the MusicGen-small benchmark (about 300M parameters), and replace its Transformer backbone with the emerging class of state-space models (SSMs). Specifically, we explore different SSM variants for sequence modeling, and compare a single-stage SSM-based design with a decomposable two-stage SSM/diffusion hybrid design. All proposed models are trained from scratch on a purely public dataset comprising 457 hours of CC-licensed music, ensuring full openness.
+                    Our experimental findings are three-fold. First, we show that SSMs exhibit superior training efficiency compared to the Transformer counterpart. Second, despite using only 9\% of the FLOPs and 2\% of the training data size compared to the MusicGen-small benchmark, our model achieves competitive performance in both objective metrics and subjective listening tests based on MusicCaps captions. Finally, our scaling-down experiment demonstrates that SSMs can maintain competitive performance relative to the Transformer baseline even at the same training budget (measured in iterations), when the model size is reduced to four times smaller.
+                    We will publicly release the training data, model weights and code to enable reproducibility, hoping to contribute to the democratization of TTM research.
                 </p>
                 </div>
             </div>
