@@ -281,6 +281,7 @@
                             </a>
                         </span>
 
+                        <template>
                         <!-- TODO: Add your supplementary material PDF or remove this section -->
                         <span class="link-block">
                             <a href="static/pdfs/supplementary_material.pdf" target="_blank"
@@ -291,6 +292,7 @@
                                 <span>Supplementary</span>
                             </a>
                         </span>
+                        </template>
 
                         <!-- TODO: Replace with your GitHub repository URL -->
                         <span class="link-block">
@@ -353,8 +355,8 @@
                 <p>
                     Recent advances in text-to-music generation (TTM) have yielded high-quality results, but often at the cost of extensive compute and the use of large proprietary internal data. To improve the affordability and openness of TTM training, an open-source generative model backbone that is more training- and data-efficient is needed.
                     In this paper, we constrain the number of trainable parameters in the generative model to match that of the MusicGen-small benchmark (about 300M parameters), and replace its Transformer backbone with the emerging class of state-space models (SSMs). Specifically, we explore different SSM variants for sequence modeling, and compare a single-stage SSM-based design with a decomposable two-stage SSM/diffusion hybrid design. All proposed models are trained from scratch on a purely public dataset comprising 457 hours of CC-licensed music, ensuring full openness.
-                    Our experimental findings are three-fold. First, we show that SSMs exhibit superior training efficiency compared to the Transformer counterpart. Second, despite using only 9\% of the FLOPs and 2\% of the training data size compared to the MusicGen-small benchmark, our model achieves competitive performance in both objective metrics and subjective listening tests based on MusicCaps captions. Finally, our scaling-down experiment demonstrates that SSMs can maintain competitive performance relative to the Transformer baseline even at the same training budget (measured in iterations), when the model size is reduced to four times smaller.
-                    We will publicly release the training data, model weights and code to enable reproducibility, hoping to contribute to the democratization of TTM research.
+                    Our experimental findings are three-fold. First, we show that SSMs exhibit superior training efficiency compared to the Transformer counterpart. Second, despite using only 9% of the FLOPs and 2% of the training data size compared to the MusicGen-small benchmark, our model achieves competitive performance in both objective metrics and subjective listening tests based on MusicCaps captions. Finally, our scaling-down experiment demonstrates that SSMs can maintain competitive performance relative to the Transformer baseline even at the same training budget (measured in iterations), when the model size is reduced to four times smaller.
+                    We will publicly release the training data, model weights and code to enable reproducibility, hoping to contribute to the democratization of TTM research. To facilitate the democratization of TTM research, the processed caption, model checkpoints, and source code are made publicly available on GitHub via the project page: <a href="https://lonian6.github.io/ssmttm/" target="_blank">https://lonian6.github.io/ssmttm/</a>.
                 </p>
                 </div>
             </div>
@@ -367,40 +369,40 @@
     <!-- Image carousel -->
     <section class="hero is-small">
         <div class="hero-body">
-            <div class="container">
-            <div id="results-carousel" class="carousel results-carousel">
+        <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
                 <!-- TODO: Replace with your research result images -->
-                <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+                <img src="static/images/simba-100k.png" alt="SiMBA(100k)/Diffusion" loading="lazy"/>
                 <!-- TODO: Replace with description of this result -->
                 <h2 class="subtitle has-text-centered">
-                First image description.
+                SiMBA(100k)/Diffusion
                 </h2>
             </div>
             <div class="item">
                 <!-- Your image here -->
-                <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+                <img src="static/images/simba-50k.png" alt="SiMBA(50k)/Diffusion" loading="lazy"/>
                 <h2 class="subtitle has-text-centered">
-                Second image description.
+                SiMBA(50k)/Diffusion
                 </h2>
             </div>
             <div class="item">
                 <!-- Your image here -->
-                <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+                <img src="static/images/transformer-400k.png" alt="Transformer(400k)/Diffusion" loading="lazy"/>
                 <h2 class="subtitle has-text-centered">
-                Third image description.
-            </h2>
+                Transformer(400k)/Diffusion
+                </h2>
             </div>
             <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-                Fourth image description.
-            </h2>
+                <!-- Your image here -->
+                <img src="static/images/transformer-100k.png" alt="Transformer(100k)/Diffusion" loading="lazy"/>
+                <h2 class="subtitle has-text-centered">
+                Transformer(100k)/Diffusion
+                </h2>
             </div>
         </div>
-    </div>
-    </div>
+        </div>
+        </div>
     </section>
     <!-- End image carousel -->
 
@@ -408,6 +410,7 @@
 
 
     <!-- Youtube video -->
+    <template>
     <section class="hero is-small is-light">
         <div class="hero-body">
             <div class="container">
@@ -425,6 +428,7 @@
             </div>
         </div>
     </section>
+    </template>
     <!-- End youtube video -->
 
 
