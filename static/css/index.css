@@ -749,5 +749,25 @@ a:focus {
   }
 }
 
+/* Grid image styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 建立兩列，寬度平分 */
+    gap: 20px;                            /* 圖片之間的間距 */
+    max-width: 1000px;                    /* 整體網格的最大寬度 */
+    margin: 0 auto;                       /* 網格置中 */
+}
 
+.grid-item img {
+    width: 50%;                          /* 圖片寬度隨容器縮放 */
+    height: auto;                         /* 保持原始比例 */
+    border-radius: 8px;                   /* 可選：增加圓角讓畫面更美觀 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 可選：增加陰影 */
+}
 
+/* 針對手機版的小螢幕，可以自動變成一列顯示 */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
