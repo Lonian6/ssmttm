@@ -350,7 +350,56 @@
     <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
+                <h2 class="title is-3">Quantitative Results</h2>
+                We provide a set of audio sample with their mel spectrograms for quantitative comparison.
+                All the samples are generated from the same text prompt:<br>
+                <i>"This is the recording of a jazz reggae concert. There is a saxophone lead playing a solo. There is a keyboard and an electric guitar playing the main tune with the backing of a bass guitar. In the rhythmic background, there is an acoustic reggae drum beat. The atmosphere is groovy and chill. This piece could be playing in the background at a beach. It could also be included in the soundtrack of a summer/vacation/tropical themed movie."</i>
+                <br><br>
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-fullwidth audio-table">
+                        <thead>
+                        <tr>
+                            <!-- <th style="width: 30%">Text Prompt</th> -->
+                            <th>SiMBA (100k)</th>
+                            <th>SiMBA (50k)</th>
+                            <th>Transformer (400k)</th>
+                            <th>Transformer (100k)</th>
+                        </tr>
+                        </thead>
 
+                        <tbody>
+                        <tr>
+                            <!-- <td class="prompt-cell">
+                            A jazz reggae concert with acoustic drums, electric guitar,
+                            and a groovy chill atmosphere.
+                            </td> -->
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_simba_100k.mp3" type="audio/mpeg">
+                            </audio>
+                            </td>
+
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_simba_50k.mp3" type="audio/mpeg">
+                            </audio>
+                            </td>
+
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_trans_400k.mp3" type="audio/mpeg">
+                            </audio>
+                            </td>
+
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_trans_100k.mp3" type="audio/mpeg">
+                            </audio>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <!-- 第一列 -->
                 <div class="columns is-centered">
                     <div class="column is-5">
