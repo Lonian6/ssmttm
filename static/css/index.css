@@ -771,3 +771,19 @@ a:focus {
         grid-template-columns: 1fr;
     }
 }
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.result-item img {
+    width: 100%;
+    height: auto;
+}
+
+.result-image-grid-2x2 {
+    max-width: 420px;
+    margin: 0 auto;
+}
