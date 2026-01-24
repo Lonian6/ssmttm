@@ -8,9 +8,9 @@
     <!-- TODO: Replace with your paper title and author names -->
     <meta name="title" content="Training-Efficient Text-to-Music Generation with State-Space Modeling - Wei-Jaw Lee, Fang-Chih Hsieh, Xuanjun Chen, Fang-Duo Tsai, Yi-Hsuan Yang">
     <!-- TODO: Write a compelling 150-160 character description of your research -->
-    <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+    <meta name="description" content="We introduce a training-efficient text-to-music generation paradigm using state-space modeling, achieving competitive results with reduced computational resources and public data.">
     <!-- TODO: Add 5-10 relevant keywords for your research area -->
-    <meta name="keywords" content="Text-to-Music Generation, State-Space Models, Training efficiency, Deep Learning, Music Generation">
+    <meta name="keywords" content="Text-to-Music Generation, State-Space Models, Training Efficiency">
     <!-- TODO: List all authors -->
     <meta name="author" content="Wei-Jaw Lee, Fang-Chih Hsieh, Xuanjun Chen, Fang-Duo Tsai, Yi-Hsuan Yang">
     <meta name="robots" content="index, follow">
@@ -47,7 +47,7 @@
     <!-- TODO: Same as paper title above -->
     <meta name="twitter:title" content="Training-Efficient Text-to-Music Generation with State-Space Modeling">
     <!-- TODO: Same as description above -->
-    <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+    <meta name="twitter:description" content="We introduce a training-efficient text-to-music generation paradigm using state-space modeling, achieving competitive results with reduced computational resources and public data.">
     <!-- TODO: Same as social preview image above -->
     <meta name="twitter:image" content="https://lonian6.github.io/ssmttm/static/images/social_preview.png">
     <meta name="twitter:image:alt" content="Training-Efficient Text-to-Music Generation with State-Space Modeling">
@@ -75,7 +75,7 @@
 
 
     <!-- TODO: Replace with your paper title and authors -->
-    <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+    <title>Training-Efficient Text-to-Music Generation with State-Space Modeling - Wei-Jaw Lee, Fang-Chih Hsieh, Xuanjun Chen, Fang-Duo Tsai, Yi-Hsuan Yang | Academic Research</title>
     
     <!-- Favicon and App Icons -->
     <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -115,50 +115,86 @@
     {
         "@context": "https://schema.org",
         "@type": "ScholarlyArticle",
-        "headline": "PAPER_TITLE",
-        "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+        "headline": "Training-Efficient Text-to-Music Generation with State-Space Modeling",
+        "description": "We introduce a training-efficient text-to-music generation paradigm using state-space modeling, achieving competitive results with reduced computational resources and public data.",
         "author": [
         {
             "@type": "Person",
-            "name": "FIRST_AUTHOR_NAME",
+            "name": "Wei-Jaw Lee",
             "affiliation": {
             "@type": "Organization",
-            "name": "INSTITUTION_NAME"
+            "name": "Graduate Institute of Communication Engineering, National Taiwan University"
             }
         },
         {
             "@type": "Person",
-            "name": "SECOND_AUTHOR_NAME",
+            "name": "Fang-Chih Hsieh",
             "affiliation": {
             "@type": "Organization",
-            "name": "INSTITUTION_NAME"
+            "name": "Graduate Institute of Communication Engineering, National Taiwan University"
+            }
+        },
+        {
+            "@type": "Person",
+            "name": "Xuanjun Chen",
+            "affiliation": {
+            "@type": "Organization",
+            "name": "Graduate Institute of Communication Engineering, National Taiwan University"
+            }
+        },
+        {
+            "@type": "Person",
+            "name": "Fang-Duo Tsai",
+            "affiliation": {
+            "@type": "Organization",
+            "name": "Graduate Institute of Communication Engineering, National Taiwan University"
+            }
+        },
+        {
+            "@type": "Person",
+            "name": "Yi-Hsuan Yang",
+            "affiliation": {
+            "@type": "Organization",
+            "name": "Graduate Institute of Communication Engineering, National Taiwan University"
             }
         }
         ],
-        "datePublished": "2024-01-01",
+        "datePublished": "2026-01-22",
         "publisher": {
         "@type": "Organization",
-        "name": "CONFERENCE_OR_JOURNAL_NAME"
+        "name": "Under review"
         },
-        "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-        "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-        "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-        "abstract": "FULL_ABSTRACT_TEXT_HERE",
+        "url": "https://lonian6.github.io/ssmttm/",
+        "image": "https://lonian6.github.io/ssmttm/static/images/social_preview.png",
+        "keywords": ["Text-to-Music Generation", "State-Space Models", "Training Efficiency"],
+        "abstract": "Recent advances in text-to-music generation (TTM) have yielded high-quality results, 
+            but often at the cost of extensive compute and the use of large proprietary internal data. 
+            To improve the affordability and openness of TTM training, an open-source generative model backbone that is more training- and data-efficient is needed. 
+            In this paper, we constrain the number of trainable parameters in the generative model to match that of the MusicGen-small benchmark (about 300M parameters), 
+            and replace its Transformer backbone with the emerging class of state-space models (SSMs). 
+            Specifically, we explore different SSM variants for sequence modeling, and compare a single-stage SSM-based design with a decomposable two-stage SSM/diffusion hybrid design. 
+            All proposed models are trained from scratch on a purely public dataset comprising 457 hours of CC-licensed music, ensuring full openness. 
+            Our experimental findings are three-fold. First, we show that SSMs exhibit superior training efficiency compared to the Transformer counterpart. 
+            Second, despite using only 9% of the FLOPs and 2% of the training data size compared to the MusicGen-small benchmark, 
+            our model achieves competitive performance in both objective metrics and subjective listening tests based on MusicCaps captions. 
+            Finally, our scaling-down experiment demonstrates that SSMs can maintain competitive performance relative to the Transformer baseline even at the same training budget (measured in iterations), 
+            when the model size is reduced to four times smaller. We will publicly release the training data, model weights and code to enable reproducibility, hoping to contribute to the democratization of TTM research. 
+            To facilitate the democratization of TTM research, the processed caption, model checkpoints, and source code are made publicly available on GitHub via the project page: https://lonian6.github.io/ssmttm/.",
         "citation": "BIBTEX_CITATION_HERE",
         "isAccessibleForFree": true,
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "mainEntity": {
         "@type": "WebPage",
-        "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+        "@id": "https://lonian6.github.io/ssmttm/"
         },
         "about": [
         {
             "@type": "Thing",
-            "name": "RESEARCH_AREA_1"
+            "name": "Music Generation"
         },
         {
             "@type": "Thing", 
-            "name": "RESEARCH_AREA_2"
+            "name": "Multi-modal Representation Learning"
         }
         ]
     }
@@ -169,12 +205,12 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "INSTITUTION_OR_LAB_NAME",
-        "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-        "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+        "name": "Music and AI Lab, National Taiwan University",
+        "url": "https://affige.github.io/lab.html",
+        "logo": "https://lonian6.com/static/images/favicon.ico",
         "sameAs": [
         "https://twitter.com/YOUR_TWITTER_HANDLE",
-        "https://github.com/YOUR_GITHUB_USERNAME"
+        "https://github.com/lonian6"
         ]
     }
     </script>
@@ -345,6 +381,66 @@
         </div>
     </section>
     <!-- End paper abstract -->
+
+    <!-- Audio table -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">LM/Diffusion Results</h2>
+                        <div class="content has-text-justified">
+                        <!-- TODO: Replace with your paper abstract -->
+                        <p>
+                            This section shows the generated audio by Prefix SiMBA(100k)/Diffusion and Cross Transformer(400k)/Diffusion. 
+                            As mentioned in paper, we only modeling on the single-codebook of DAC (&kappa;=1) for training the LM then use the pre-trained Discodiff for second stage refine. 
+                            All the text prompt are randomly selected from MusicCaps, and audio samples here are randomly selected as well.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <h2 class="title is-3"></h2> -->
+                <!-- We provide a set of audio sample with their mel spectrograms for quantitative comparison.
+                All the samples are generated from the same text prompt:<br> -->
+                
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-fullwidth audio-table">
+                        <thead>
+                        <tr>
+                            <th style="width: 30%">Text Prompt</th>
+                            <th>SiMBA (100k)</th>
+                            <th>Transformer (400k)</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td class="prompt-cell">
+                            This is the recording of a jazz reggae concert. 
+                            There is a saxophone lead playing a solo. 
+                            There is a keyboard and an electric guitar playing the main tune with the backing of a bass guitar. In the rhythmic background, 
+                            there is an acoustic reggae drum beat. The atmosphere is groovy and chill. This piece could be playing in the background at a beach. 
+                            It could also be included in the soundtrack of a summer/vacation/tropical themed movie.
+                            </td>
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_simba-100k.mp3" type="audio/mp3">
+                            </audio>
+                            </td>
+
+                            <td>
+                            <audio controls preload="none">
+                                <source src="static/audio/quantitative/004_trans-400k.mp3" type="audio/mp3">
+                            </audio>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End audio table -->
 
     <!-- Image grid -->
     <section class="hero is-small">
