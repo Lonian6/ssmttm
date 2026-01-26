@@ -299,7 +299,7 @@
 
                 <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Graduate Institute of Communication Engineering, National Taiwan University</span>
+                    <span class="author-block">Graduate Institute of Communication Engineering, National Taiwan University<br>Under Review</span>
                     <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
                     <!-- TODO: Remove this line if no equal contribution -->
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
@@ -388,7 +388,7 @@
             <div class="container">
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
-                        <h2 class="title is-3">LM/Diffusion Results</h2>
+                        <h2 class="title is-3">LM/Diffusion Results Comparison</h2>
                         <div class="content has-text-justified">
                         <!-- TODO: Replace with your paper abstract -->
                         <p>
@@ -407,33 +407,181 @@
                     <table class="table is-bordered is-striped is-fullwidth audio-table" style="vertical-align: middle;">
                         <thead>
                         <tr>
-                            <th style="width: 30%">Text Prompt</th>
+                            <th style="width: 45%">Text Prompt</th>
                             <th>SiMBA (100k)</th>
                             <th>Transformer (400k)</th>
+                            <th>MusicGen-Small</th>
                         </tr>
                         </thead>
 
                         <tbody>
-                        <tr>
-                            <td class="prompt-cell">
-                            This is the recording of a jazz reggae concert. 
-                            There is a saxophone lead playing a solo. 
-                            There is a keyboard and an electric guitar playing the main tune with the backing of a bass guitar. In the rhythmic background, 
-                            there is an acoustic reggae drum beat. The atmosphere is groovy and chill. This piece could be playing in the background at a beach. 
-                            It could also be included in the soundtrack of a summer/vacation/tropical themed movie.
-                            </td>
-                            <td style="text-align: center; vertical-align: middle;">
-                            <audio controls preload="none">
-                                <source src="static/audio/quantitative/004_simba-100k.mp3" type="audio/mp3">
-                            </audio>
-                            </td>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                This is an instrumental backing track of a jazz music piece. There is no singer in this version of the piece. The piano is playing the chords in the minor key while a bass guitar can be heard playing a walking bass line. The rhythmic background consists of acoustic drums playing a jazz swing beat. The atmosphere is delicate. This piece could be playing in the background at a coffee shop. It could be used in the soundtrack of a romantic movie.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/002_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
 
-                            <td style="text-align: center; vertical-align: middle;">
-                            <audio controls preload="none">
-                                <source src="static/audio/quantitative/004_trans-400k.mp3" type="audio/mp3">
-                            </audio>
-                            </td>
-                        </tr>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/002_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/002_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                The song is an instrumental. The song is medium tempo with a guitar playing solo, steady drum rhythm, groovy bass line and steady bass line. The song is funky and groovy in nature. The song is an ad jingle.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/007_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/007_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/007_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                The low quality recording features an electro house song that consists of punchy "4 on the floor" kick pattern, claps, funky electric guitar melody, groovy synth keys, groovy bass that glues everything together and shimmering shakers. It sounds a bit muddy, but also energetic, fun and exciting - like something you would hear in clubs during 70s and 80s a lot.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/010_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/010_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/010_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                The low quality recording features an instrumental cover that consists exotic steel pan melody, punchy kick hits layered with claps, groovy piano chord progression and groovy bass. It is in mono and it sounds a bit harsh, but energetic, tropical and exotic.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/012_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/012_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/012_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                This music is instrumental. The tempo is medium fast with a melodious keyboard harmony, steady drumming, groovy bass, synthesiser arrangements , electronically articulated sounds and tambourine beats . The melody is harmonious, pleasant, uncomplicated and well layered. This music is Synth Pop.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/015_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/015_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/015_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
+                            <!-- Row 6 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                The song is instrumental. The song is medium tempo with traditional percussion instruments , bongos, piano accompaniment and groovy bass line. The song is improvisational and energetic. The song is jazz fusion and has poor audio quality.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/017_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/017_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/017_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
+                            <!-- Row 7 -->
+                            <tr>
+                                <td class="prompt-cell">
+                                This music is an Electronic dance instrumental. The tempo is medium fast with punchy drum beats and groovy electronic arrangements.The music is buoyant, energetic, electric, pulsating, youthful and vigorous. The thumpy, rhythmic bass and drumming gives it a groovy dance beat.
+                                </td>
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/019_simba-100k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/019_trans-400k.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+
+                                <td style="text-align: center; vertical-align: middle;">
+                                <audio controls preload="none">
+                                    <source src="static/audio/full_band/019_musicgen-s.mp3" type="audio/mp3">
+                                </audio>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -448,7 +596,7 @@
             <div class="container">
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
-                        <h2 class="title is-3">Quantitative Results</h2>
+                        <h2 class="title is-3">Quantitative Result</h2>
                         <div class="content has-text-justified">
                         <!-- TODO: Replace with your paper abstract -->
                         <p>
